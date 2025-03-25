@@ -1,0 +1,10 @@
+---
+- name: Update all packages to the latest version
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Update all packages
+      yum:
+        name: "*"
+        state: latest
+        update_cache: yes
