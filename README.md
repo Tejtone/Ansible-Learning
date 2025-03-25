@@ -4,7 +4,7 @@
 
 # Ansible Learning Environment 🐍
 To repozytorium zawiera podstawowe konfiguracje Ansible, których używam podczas nauki.  
-Środowisko składa się z:
+Środowisko postawione na Proxmox składa się z 13 maszyn wirtualnych:
 - **Control Node**: 1 maszyna
 - **Webservers**: 4 maszyny
 - **Databases**: 3 maszyny
