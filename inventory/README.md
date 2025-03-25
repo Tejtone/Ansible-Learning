@@ -23,11 +23,9 @@ Grupa maszyn do testów i eksperymentów.
 Plik `hosts.ini` jest używany przez Ansible do zarządzania maszynami wirtualnymi. W każdym playbooku Ansible, do którego odnosisz się do tego pliku, będziesz wskazywał odpowiednią grupę lub hosta. 
 
 ## Po dodaniu adresów IP dla różnych grup musimy w Control Node wygenerować klucz SSH, a następnie musimy skopiować klucz SSH na maszyny docelowe
-```
-bash
+``` bash
 ssh-keygen -t rsa -b 4096
 ```
-```
-bash
-ssh-copy-id user@192.168.100.x
+``` bash
+ssh-copy-id user@x.x.x.x
 ```
