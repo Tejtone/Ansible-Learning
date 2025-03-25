@@ -31,3 +31,7 @@ a następnie musimy skopiować klucz SSH na maszyny docelowe
 ``` bash
 ssh-copy-id user@x.x.x.x
 ```
+## Warto dla pewności sprawdzić połączenie pomiędzy systemami
+``` bash
+ansible all -m ping
+```
