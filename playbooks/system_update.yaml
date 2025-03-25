@@ -1,10 +1,10 @@
 ---
 - name: Update all packages to the latest version
   hosts: webservers
-  become: yes
+  become: yes # wykonaj zadanie z uprawnieniami administratora(root)
   tasks:
     - name: Update all packages
-      yum:
-        name: "*"
-        state: latest
-        update_cache: yes
+      yum:  # jest to moduł, który pozwala na zarzadzanie pakeitami
+        name: "*" # wszystkie pakiety
+        state: latest # aktualizacja do najnowszej wersji
+        update_cache: yes # odświeżenie cache
